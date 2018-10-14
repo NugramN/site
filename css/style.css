@@ -1,0 +1,150 @@
+table {
+position:relative;
+height:100vh;
+width:100vw;
+border-collapse:collapse;
+}
+
+body {
+margin:0px;
+padding:0px;
+}
+
+.row1{
+background-origin:padding-box;
+background-image:url(vin1.jpg) ;
+background-size:cover;
+text-shadow:red 0 0 2px;
+color:blue;
+font-size:1em;
+-moz-hyphens:auto;
+-webkit-hyphens:auto;
+-ms-hyphens:auto;
+}
+
+.row2{
+background-color: #80E0FF;
+}
+
+.column {
+-webkit-columns:200px 3;
+-moz-columns:200px 3;
+columns:200px 3;
+webkit-column-gap:30px;
+-moz-column-gap:30px;
+column-gap:30px;
+-webkit-column-rule:1px solid #ccc;
+-moz-column-rule:1px solid #ccc;
+column-rule:2px solid #ccc;
+}
+
+.a1
+{
+color:red;
+font-size:15px;
+text-decoration:blink;
+font-family:Broadway;
+font-style:oblique;
+text-shadow: 1px 1px #F3E7CF, -1px -1px #56433D;
+}
+
+.a2 
+{
+font-family:Chiller;
+font-size:17px;
+text-decoration:overline;
+font-style:italic;
+color:yellow;
+}
+
+.a3
+{
+font-family:Forte;
+font-size:16px;
+font-style:normal;
+color:pink;
+}
+
+.one
+{
+    border: 2px solid #00a8e1;
+    border-radius: 10px/20px;
+    position:relative;
+filter:alpha(Opacity=90);
+opacity:0.9;
+left:80px;
+top:-60px;
+
+}
+
+.two 
+{
+    border: 2px solid #FF80FF;
+    border-radius: 10px/20px;
+    position:relative;
+filter:alpha(Opacity=80);
+opacity:0.8;
+left:-100px;
+top:80px;
+
+}
+
+.three
+{
+    border: 2px solid #80FF80;
+    border-radius: 10px/20px;
+    filter:alpha(Opacity=75);
+opacity:0.75;
+    position:relative;
+ left:330px;
+ top:20px;
+ 
+}
+
+.ball
+{
+    position:absolute;
+    top:10px;
+    left:10px;
+    width:100px;
+    height:100px;
+    background:pink;
+    border-radius:100%;
+    transition-property:background-color;
+    -webkit-animation:10s ballball infinite;
+    animation:linear 10s ballball infinite;
+    z-index:4;
+    animation-play-state: running;
+}
+
+@-webkit-keyframes ballball
+{
+    from{top:5px;left:20px;}
+    50%{top:300px;left:20px;opacity:0.8;background-color:yellow;}
+    to{top:500px;left:20px;transform:rotate(360deg);background-color:pink;opacity:0.7;background-color:blue;}
+    
+}
+
+.cat
+{
+    position:absolute;
+    top:10px;
+    left:10px;
+    width:100px;
+    height:100px;
+    background:pink;
+    border-radius:100%;
+    transition-property:background-color;
+    -webkit-animation:10s catcat infinite;
+    animation:linear 10s catcat infinite;
+    z-index:4;
+    animation-play-state: running;
+}
+
+@-webkit-keyframes catcat
+{
+    from{top:5px;left:20px;}
+    50%{top:300px;left:20px;opacity:0.8;}
+    to{top:500px;left:20px;transform:rotate(360deg);background-color:pink;opacity:0.6;}  
+}
+
